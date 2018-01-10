@@ -9,7 +9,7 @@ function executeQuery(query) {
 		)
 	);
 };
-exports.query=exports.get=(obj)=>(
+exports.query=exports.get=exports.getKey=(obj)=>(
 	typeof obj==='string'&&(obj={target:obj}),
 	executeQuery(
 		'query '+obj.target+

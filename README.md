@@ -56,7 +56,7 @@ regedit.query('HKEY_CURRENT_USER\\Software\\Node.js').then(funciton(data){
 	}
 });
 ```
-Aliases: regedit.query
+Aliases: regedit.query, regedit.getKey
 
 ### regedit.addKey(object)
 Add keys and values to the Registry
