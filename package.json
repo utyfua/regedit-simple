@@ -1,0 +1,21 @@
+{
+  "author": "Utyfua",
+  "bugs": {
+    "url": "https://github.com/utyfua/regedit-simple/issues"
+  },
+  "deprecated": false,
+  "description": "A simple package for registry interaction from nodejs",
+  "homepage": "https://github.com/utyfua/regedit-simple#readme",
+  "keywords": [
+    "registry",
+    "regedit",
+    "regedit-simple"
+  ],
+  "main": "index.js",
+  "name": "regedit-simple",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/utyfua/regedit-simple.git"
+  },
+  "version": "0.0.1"
+}
