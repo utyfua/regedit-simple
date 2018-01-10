@@ -1,3 +1,4 @@
+//https://commandwindows.com/reg.htm
 var path = require('path');
 const exec = require('child_process').exec;
 const basePath = path.join(process.env.WINDIR, 'system32', 'reg.exe');

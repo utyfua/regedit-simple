@@ -1,5 +1,6 @@
 # node-reg
 A very simple, and incomplete registry editor for Node.js
+These functions are enough for me. Need more? [Create issue!](https://github.com/utyfua/regedit-simple/issues/new)
 
 ## Installation
 ```sh
