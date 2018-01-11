@@ -35,10 +35,10 @@ exports.query=exports.get=exports.getKey=(obj)=>(
 	})
 );
 exports.add=exports.addKey=(obj)=>executeQuery(
-		' add ' + entry.target+
-		' /v ' + entry.name+
-		' /t ' + entry.type+
-		' /d ' + entry.value+
+		' add ' + obj.target+
+		' /v ' + obj.name+
+		' /t ' + obj.type+
+		' /d ' + obj.value+
 		' /f'
 	)
 	.then(data=>data.error||data.stdout);

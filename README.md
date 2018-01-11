@@ -12,20 +12,27 @@ $ npm install --save regedit-simple
 ```javascript
 var regedit = require('regedit-simple');
 
+// simplifed version
 regedit.addKey({
 	target: 'HKCU\\Software\\TestDemo',
 	name: 'MyApp',
 	value: 'heyLookAValue',
 	type: 'REG_SZ'
 }).then(function(result) {
-	console.log(result)
-});
-
-regedit.getKey({
-	target: 'HKCU\\Software\\TestDemo'
-}).then(funciton(result) {
 	console.log(result);
-});
+	// get own data
+	regedit.getKey({
+		target: 'HKCU\\Software\\TestDemo'
+	}).then(function(result) {
+		console.log(result);
+		// destroy own data
+		regedit.delete({
+			target: 'HKCU\\Software\\TestDemo'
+		}).then(function(result) {
+			console.log(result);
+		})
+	})
+})
 ```
 
 ## Api
