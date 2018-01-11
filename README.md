@@ -1,5 +1,6 @@
-# node-reg
-A very simple, and incomplete registry editor for Node.js
+# regedit-simple
+A very simple, and incomplete registry editor for Node.js.
+
 These functions are enough for me. Need more? [Create issue!](https://github.com/utyfua/regedit-simple/issues/new)
 
 ## Installation
@@ -9,7 +10,7 @@ $ npm install --save regedit-simple
 
 ### Example
 ```javascript
-var regedit = require('node-reg');
+var regedit = require('regedit-simple');
 
 regedit.addKey({
 	target: 'HKCU\\Software\\TestDemo',
@@ -36,7 +37,7 @@ var regedit = require('regedit-simple');
 ### regedit.get(string target)
 Get at what is contained in a particular Registry key(target)
 ```javascript
-regedit.query('HKEY_CURRENT_USER\\Software\\Node.js').then(funciton(data){
+regedit.query('HKEY_CURRENT_USER\\Software\\7-Zip').then(funciton(data){
 	//example data
 	data={
 		ths: 'HKEY_CURRENT_USER\\Software\\7-Zip',
